@@ -14,8 +14,6 @@ const bot = new BootBot({
 // THIS IS JUST NEEDED SO HEROKU WON"T STOPP OUR APPLICATION
 const app = express();
 app.use(express.static(path.resolve(__dirname + '/static')));
-app.listen(process.env.PORT || 5000);
-
 app.get('/', (req, res) => {
     res.sendFile('index.html');
 });
