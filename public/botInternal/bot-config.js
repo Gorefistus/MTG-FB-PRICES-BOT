@@ -44,7 +44,7 @@ function addCommands(bot) {
 function startBot(bot, pollDelay = 3000) {
     if (bot && typeof bot.start === 'function') {
         addCommands(bot);
-        bot.start(pollDelay); // we meed this delay or VK return and error
+        bot.start(process.env.PORT||3000); // we meed this delay or VK return and error
         console.log('____________________________________\n|             Bot started           |\n____________________________________');
     } else {
         console.error(STRINGS.BOT_ERROR);
