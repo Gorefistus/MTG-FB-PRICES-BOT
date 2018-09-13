@@ -1,0 +1,36 @@
+{
+  "name": "mtg-vk-prices-bot",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "node public/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gorefistus/MTG-FB-PRICES-BOT"
+  },
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Gorefistus/MTG-FB-PRICES-BOT/issues"
+  },
+  "homepage": "https://github.com/Gorefistus/MTG-FB-PRICES-BOT#readme",
+  "dependencies": {
+    "bootbot": "^1.0.16",
+    "bot-metrica": "^1.0.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "franc": "^4.0.0",
+    "phantom": "^6.0.3",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5",
+    "scryfall-sdk": "1.2.0",
+    "wikijs": "^4.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}
