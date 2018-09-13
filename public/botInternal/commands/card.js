@@ -1,6 +1,3 @@
-const fs = require('fs');
-const path = require('path');
-
 const STRINGS = require('../../common/strings');
 const CONSTANTS = require('../../common/constants');
 const MISC = require('../../common/misc');

@@ -1,7 +1,5 @@
 const BootBot = require('bootbot');
 const botStarter = require('./botInternal/bot-config');
-const path = require('path');
-const express = require('express');
 const http = require('http');
 
 const bot = new BootBot({
@@ -10,13 +8,6 @@ const bot = new BootBot({
     appSecret: process.env.appSecret || 'place your token here',
 });
 
-
-// THIS IS JUST NEEDED SO HEROKU WON"T STOPP OUR APPLICATION
-const app = express();
-app.use(express.static(path.resolve(__dirname + '/static')));
-app.get('/', (req, res) => {
-    res.sendFile('index.html');
-});
 
 setInterval(() => {
     console.log('PINGED YOURSELF');
